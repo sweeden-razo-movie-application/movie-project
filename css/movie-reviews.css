@@ -16,7 +16,7 @@
 /*}*/
 /*!*end of loading message test*!*/
 
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 :root {
     --panelBg: rgb(47, 49, 52);
     --darkBg: rgb(62, 64, 67);
@@ -29,8 +29,8 @@ hr {
 }
 body {
     background-color: var(--darkBg);
-    color: whitesmoke;
-    font-family: 'Noto Sans JP', sans-serif;
+    color: antiquewhite;
+    font-family: 'Montserrat';
 }
 #container {
     display: flex;
@@ -96,7 +96,7 @@ img {
 .btn {
     margin: 10px;
     background-color: #09090A;
-    color: whitesmoke;
+    color: antiquewhite;
 }
 .textBox {
     display: flex;

@@ -1,40 +1,165 @@
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <title>Movie Reviews</title>-->
+
+<!--&lt;!&ndash;bootstrap cdn&ndash;&gt;-->
+<!--<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"-->
+<!--          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"-->
+
+<!--&lt;!&ndash;for loading message test links   &ndash;&gt;-->
+<!--    <link href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" rel="stylesheet"/>-->
+<!--    <link href="https://fonts.googleapis.com/css?family=Alex+Brush" rel="stylesheet">-->
+<!--    &lt;!&ndash;css stylesheet&ndash;&gt;-->
+<!--    <link rel="stylesheet" href="css/movie-reviews.css">-->
+<!--&lt;!&ndash;end of loading message test links   &ndash;&gt;-->
+
+<!--</head>-->
+<!--<body>-->
+
+<!--&lt;!&ndash;loading message test&ndash;&gt;-->
+<!--<div class="page">-->
+
+<!--&lt;!&ndash;navbar    &ndash;&gt;-->
+<!--<nav class="navbar sticky-top navbar-light mb-0" style="background-color: #09090A;">-->
+<!--    <h4 class="text-light"><i class="fas fa-film"></i>REVIEWS</h4>-->
+<!--    <a class="text-light" href="#">Home</a>-->
+<!--    <a class="text-light" href="#">Movies</a>-->
+<!--    <a class="text-light" href="#">TV Shows</a>-->
+<!--    <a class="text-light" href="#">My List<i class="fas fa-list"></i></a>-->
+<!--    <a class=" text-light" href="#"><i class="fas fa-bell"></i><i class="far fa-user-circle"></i></a>-->
+<!--</nav>-->
+<!--<hr>-->
+<!--</div>-->
+<!--&lt;!&ndash;navbar&ndash;&gt;-->
+
+<!--<div id="loading"></div>-->
+<!--&lt;!&ndash;end of loading message test&ndash;&gt;-->
+
+
+
+<!--&lt;!&ndash;bootstrap JS&ndash;&gt;-->
+<!--<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"-->
+<!--        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"-->
+<!--        crossorigin="anonymous"></script>-->
+<!--<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"-->
+<!--        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"-->
+<!--        crossorigin="anonymous"></script>-->
+<!--<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"-->
+<!--        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"-->
+<!--        crossorigin="anonymous"></script>-->
+
+<!--&lt;!&ndash;jquery cdn&ndash;&gt;-->
+<!--<script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="-->
+<!--        crossorigin="anonymous"></script>-->
+
+<!--&lt;!&ndash;JS file&ndash;&gt;-->
+<!--<script src="js/movie-reviews.js"></script>-->
+
+<!--</body>-->
+<!--</html>-->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Movie Reviews</title>
-
-<!--bootstrap cdn-->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
-          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
-<!--css stylesheet-->
-<link rel="stylesheet" href="css/movie-reviews.css">
-
+    <title>Movies Application</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/6bffcc9069.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/movie-reviews.css">
 </head>
 <body>
+<nav class="navbar sticky-top navbar-light mb-0" style="background-color: #09090A;">
+    <h4 class="text-light "><i class="fas fa-film"></i>Nicole & Javier's Movie Reviews</h4>
+    <a class="text-light" href="#">Home</a>
+    <a class="text-light" href="#">Movies</a>
+    <a class="text-light" href="#">TV Shows</a>
+    <a class="text-light" href="#">My List<i class="fas fa-list"></i></a>
+    <a class=" text-light" href="#"><i class="fas fa-bell"></i><i class="far fa-user-circle"></i></a>
+</nav>
+<hr>
 
-
-
-
-
-
-
-
-
-
-
-<!--bootstrap JS-->
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-
-<!--jquery cdn-->
-<script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="
-        crossorigin="anonymous"></script>
-
-<!--JS file-->
+<!--displays movies-->
+<div id="container" class=" row d-flex"></div>
+<!--edit menu-->
+<div class="rightSide d-flex row">
+    <div class="">
+        <button id="showEdit" class="btn btn-outline-secondary">Edit</button>
+        <select  id="selectMenu" class="hidden1 select"></select>
+        <div class="hidden1 editMovie" id="editMovie">
+            <label for="newTitle">Change Title </label>
+            <input type="text" id="newTitle">
+            <br>
+            <label for="newGenre">Change Genre </label>
+            <input type="text" id="newGenre">
+            <br>
+            <label for="newRating">Change Rating </label>
+            <input type="text" id="newRating">
+            <br>
+            <label for="newDirector">Change Director </label>
+            <input type="text" id="newDirector">
+            <br>
+            <div class="textBox">
+                <label for="newPlot">Change plot </label>
+                <textarea id="newPlot" rows="3" cols="30"></textarea>
+            </div>
+            <br>
+            <button id="changeMovie" class="btn btn-outline-secondary">Update Movie</button>
+        </div>
+    </div>
+    <!--Delete menu-->
+    <div class="">
+        <button class="remove-hidden btn btn-outline-secondary">Delete a movie</button>
+        <div class="deleteGroup">
+            <select id="selectMenu2" class="hidden1 select">
+                <option>Delete a movie</option>
+            </select>
+            <button id="delete-movie" class="hidden1 btn btn-danger">Delete movie</button>
+        </div>
+    </div>
+    <!--Post menu-->
+    <div class="">
+        <button id="post-id" class="btn btn-outline-secondary">Post Movie</button>
+        <div class="hidden1 editMovie" id="postMovie">
+            <label for="title">Title </label>
+            <input type="text" id="title">
+            <br>
+            <label for="genre">Genre </label>
+            <input type="text" id="genre">
+            <br>
+            <label for="rating">Rating </label>
+            <input type="text" id="rating">
+            <br>
+            <label for="director">Director </label>
+            <input type="text" id="director">
+            <br>
+            <div class="textBox">
+                <label for="plot">Plot </label>
+                <textarea id="plot" rows="5" cols="40"></textarea>
+            </div>
+            <br>
+            <button id="newMovie" class="btn button-outline-secondary">Add Movie</button>
+        </div>
+    </div>
+</div>
+<footer>
+    <nav>
+        <ul class="icon-info text-light">
+            <li class="bolt text-light"><i class="fas fa-ticket-alt"></i></li>
+            <li class="followUs text-light">Follow Us @</li>
+            <li><a href="#" class="twitter"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="#" class="fb"><i class="fab fa-facebook"></i></a></li>
+            <li><a href="#" class="ig" ><i class="fab fa-instagram"></i></a></li>
+        </ul>
+    </nav>
+</footer>
+<!------------->
+<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
 <script src="js/movie-reviews.js"></script>
-
+<!--bootstrap-->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+<!--end of bootstrap-->
 </body>
 </html>

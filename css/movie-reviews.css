@@ -28,8 +28,8 @@ hr {
     background-image: linear-gradient(to right, rgb(63, 162, 172), rgb(65, 42, 146), rgb(63, 162, 172));
 }
 body {
-    background-color: var(--darkBg);
-    color: antiquewhite;
+    background-color: #171717;
+    color: white;
     font-family: 'Montserrat';
 }
 #container {
@@ -94,9 +94,9 @@ img {
     float: right;
 }
 .btn {
-    margin: 10px;
+    margin: 20px;
     background-color: #09090A;
-    color: antiquewhite;
+    color: white;
 }
 .textBox {
     display: flex;
@@ -165,3 +165,33 @@ a:hover {
         background-position: 0 50%;
     }
 }
+
+a.text-light {
+    padding: 30px;
+}
+
+#second {
+    padding-top: 50px;
+    position: absolute;
+}
+
+img {
+    background-attachment: fixed;
+    width: 100%;
+    height: auto;
+}
+
+.page-footer {
+    display: flex;
+    align-items:center;
+}
+
+.form-control {
+    width: 30%;
+}
+
+.logo {
+    height: 135px;
+    width: 230px;
+}
+

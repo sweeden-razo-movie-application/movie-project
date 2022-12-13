@@ -31,6 +31,8 @@
 //
 // })();
 "use strict";
+
+
 $(document).ready(function(){
     let movieArray = [];
     let url = "https://efficient-wholesale-pediatrician.glitch.me/movies";

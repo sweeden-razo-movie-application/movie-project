@@ -17,20 +17,37 @@
 /*!*end of loading message test*!*/
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
-:root {
-    --panelBg: rgb(47, 49, 52);
-    --darkBg: rgb(62, 64, 67);
-}
+/*:root {*/
+/*    --panelBg: rgb(47, 49, 52);*/
+/*    --darkBg: rgb(62, 64, 67);*/
+/*}*/
+
 hr {
     margin: 0 0 4px 0;
     border : 0;
-    height: 3px;
-    background-image: linear-gradient(to right, rgb(63, 162, 172), rgb(65, 42, 146), rgb(63, 162, 172));
+    height: 5px;
+    /*background-image: linear-gradient(to right, rgb(63, 162, 172), rgb(65, 42, 146), rgb(63, 162, 172));*/
+    background-image: linear-gradient(to right, #987827, #bdc3c7, #2c3e50);
+
 }
-body {
-    background-color: #171717;
+
+* {
     color: white;
     font-family: 'Montserrat';
+}
+
+body {
+    /*background: url(../img/background2.jpeg);*/
+    /*!*background-attachment: fixed;*!*/
+    /*background-size: cover;*/
+    /*background-repeat: no-repeat;*/
+    /*background-color: #171717;*/
+    color: white;
+    font-family: 'Montserrat';
+    font-size: 30px;
+    background: linear-gradient(to left, #ba8b02, #181818);
+
+
 }
 #container {
     display: flex;
@@ -93,11 +110,12 @@ img {
 .rightSide {
     float: right;
 }
-.btn {
-    margin: 20px;
-    background-color: #09090A;
-    color: white;
-}
+/*.btn {*/
+/*    margin: 20px;*/
+/*    background-color: #09090A;*/
+/*    color: white;*/
+/*}*/
+
 .textBox {
     display: flex;
     flex-direction: row;
@@ -111,9 +129,9 @@ img {
     display: flex;
     align-items: center;
 }
-#delete-movie {
-    margin: 0;
-    background-color: rgb(203, 68, 74);
+/*#delete-movie {*/
+/*    margin: 0;*/
+/*    background-color: rgb(203, 68, 74);*/
 }
 .icon-info {
     list-style: none;
@@ -170,28 +188,34 @@ a.text-light {
     padding: 30px;
 }
 
-#second {
-    padding-top: 50px;
-    position: absolute;
+/*.page-footer {*/
+/*    display: flex;*/
+/*    align-items:center;*/
+/*}*/
+
+
+
+.logo {
+    height: 140px;
+    width: 280px;
 }
 
+/*this also affects the logo */
 img {
     background-attachment: fixed;
     width: 100%;
     height: auto;
 }
 
-.page-footer {
-    display: flex;
-    align-items:center;
-}
-
 .form-control {
     width: 30%;
 }
 
-.logo {
-    height: 140px;
-    width: 230px;
+.btn-outline-light {
+    position: relative;
+    left:-750px;
+    bottom: 2px;
 }
+
+
 

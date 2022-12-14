@@ -1,2 +1,2 @@
 
-// const API_KEY = "http://www.omdbapi.com/?apikey=[b1619ec1]&";
+const API_KEY = "b1619ec1&";

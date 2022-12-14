@@ -1,27 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <title class="">Movies Applications</title>
+    <title class="">Movies App Project</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="css/movie-reviews.css">
 </head>
 
+<!--navbar-->
+<nav class="navbar sticky-top navbar-light mb-0" style="background-color: #09090A;">
+    <img src="img/logos1.png">
+    <a class="text-light">Home</a>
+    <a class="text-light">Movies</a>
+    <a class="text-light">TV Shows</a>
+    <a class="text-light">My List</a>
+    <a class=" text-light"></a>
+</nav>
+
+<hr>
+
+<!--navbar-->
+
 <body class="container-fluid">
-<h1 class="text-center mt-5 mb-5" style="text-align: center">Movie Application</h1>
+
+
+<div class="loader"></div>
+
+
 <div id="main" class="row">
-    <div class="loader"></div>
 </div>
 
-
 <button id="show-btn" type="button" class="btn editButton mb-5" >
-    Hide/Show
+    Hide/Show Input Fields
 </button>
 
-
+<div class="contains-input-field">
 
 <div id="content1" class="toggle" style="display:none">
     <form id="myForm">
+
         <div class="form-group">
             <label for="title">Title</label>
             <input type="text" class="form-control text-left" id="title">
@@ -29,8 +47,8 @@
             <label for="rating">Rating </label>
             <input type="text" class="form-control" id="rating">
             <br>
-            <label for="poster">Poster Link</label>
-            <input type="text" id="poster" class="form-control">
+<!--            <label for="poster">Poster Link</label>-->
+<!--            <input type="text" id="poster" class="form-control">-->
             <label for="year">Year </label>
             <input type="text" class="form-control" id="year">
             <br>
@@ -40,19 +58,22 @@
             <label for="director">Director </label>
             <input type="text" class="form-control" id="director">
             <br>
-            <label for="plot">Plot</label>
-            <input type="text" class="form-control" id="plot">
-            <br>
-            <label for="actors">actor name</label>
-            <input type="text" class="form-control" id="actors">
-            <br>
-            <input type="submit" class="form-control" value="post" id="post">
+<!--            <label for="plot">Plot</label>-->
+<!--            <input type="text" class="form-control" id="plot">-->
+<!--            <br>-->
+<!--            <label for="actors">actor name</label>-->
+<!--            <input type="text" class="form-control" id="actors">-->
+<!--            <br>-->
+            <!--button for post-->
+            <input type="submit" class="form-control" value="Post" id="post">
         </div>
     </form>
+</div>
 </div>
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 <script src="https://kit.fontawesome.com/5a92cbf765.js" crossorigin="anonymous"></script>
+<script src="js/keys.js"></script>
 <script src="js/movie-reviews.js"></script>
 </body>
 </html>

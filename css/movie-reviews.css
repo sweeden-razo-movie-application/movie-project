@@ -1,221 +1,29 @@
-/*!*for loading message test *!*/
-/*.page    { display: none; padding: 0 0.5em; }*/
-/*.page h1 { font-size: 2em; line-height: 1em; margin-top: 1.1em; font-weight: bold; }*/
-/*.page p  { font-size: 1.5em; line-height: 1.275em; margin-top: 0.15em; }*/
+body{
+    background-color: lightsalmon;
+}
 
-/*#loading {*/
-/*    display: flex;*/
-/*    position: fixed;*/
-/*    z-index: 100;*/
-/*    width: 100%;*/
-/*    height: 100%;*/
-/*    background-color: rgba(192, 192, 192, 0.5);*/
-/*    background-image: url("https://i.stack.imgur.com/MnyxU.gif");*/
-/*    background-repeat: no-repeat;*/
-/*    background-position: center;*/
-/*}*/
-/*!*end of loading message test*!*/
+.loader {
+    border: 5px solid black;
+    border-radius: 50%;
+    border-top: 5px solid lightblue;
+    width: 25px;
+    height: 25px;
+    animation: spin 2s linear infinite;
+}
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
-/*:root {*/
-/*    --panelBg: rgb(47, 49, 52);*/
-/*    --darkBg: rgb(62, 64, 67);*/
-/*}*/
+.editButton{
+    margin: 0 auto;
+    display: block;
+}
 
-hr {
-    margin: 0 0 4px 0;
-    border : 0;
-    height: 5px;
-    /*background-image: linear-gradient(to right, rgb(63, 162, 172), rgb(65, 42, 146), rgb(63, 162, 172));*/
-    background-image: linear-gradient(to right, #987827, #bdc3c7, #2c3e50);
+.card {
 
 }
 
-* {
-    color: white;
-    font-family: 'Montserrat';
+.hide {
+    background-color: hotpink;
 }
-
-body {
-    /*background: url(../img/background2.jpeg);*/
-    /*!*background-attachment: fixed;*!*/
-    /*background-size: cover;*/
-    /*background-repeat: no-repeat;*/
-    /*background-color: #171717;*/
-    color: white;
-    font-family: 'Montserrat';
-    font-size: 30px;
-    background: linear-gradient(to left, #ba8b02, #181818);
-
-
-}
-#container {
-    display: flex;
-    justify-content: space-around;
-}
-.editMovie{
-    border: 2px solid darkslategrey;
-    padding: 15px;
-    border-radius: 5px;
-    background: var(--panelBg);
-}
-.posters {
-    padding: 10px 20px;
-    margin: 10px;
-    width: 340px;
-    height: auto;
-    border-radius: 5px;
-    background-color: var(--panelBg);
-}
-.row {
-    margin-right: 0!important;
-}
-.grow {
-    transition: all .3s ease-in-out;
-}
-.grow:hover {
-    transform: scale(1.05);
-}
-.title {
-    text-align: center;
-    margin: 0;
-}
-img {
-    width: 300px;
-    height: 445px;
-    padding-right: 5px;
-}
-.underImgContainer {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-.rating {
-    flex-direction: column;
-}
-.director {
-    flex-direction: column;
-}
-.genre {
-    text-align: center;
-    padding: 10px;
-}
-.description {
-    padding: 12px;
-    font-size: 110%;
-}
-.hidden1 {
-    display: none;
-}
-.rightSide {
-    float: right;
-}
-/*.btn {*/
-/*    margin: 20px;*/
-/*    background-color: #09090A;*/
-/*    color: white;*/
-/*}*/
-
-.textBox {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-.select {
-    padding: 0 10px;
-    height: 38px;
-}
-.deleteGroup {
-    display: flex;
-    align-items: center;
-}
-/*#delete-movie {*/
-/*    margin: 0;*/
-/*    background-color: rgb(203, 68, 74);*/
-}
-.icon-info {
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    margin-top: 20px;
-    padding-right: 10px;
-}
-i {
-    margin-left: 5px;
-    margin-right: 5px;
-}
-.followUs {
-    font-size: 10px;
-    padding-top: 5px;
-}
-a:hover {
-    color: cadetblue;
-}
-.gradient-border {
-    --borderWidth: 3px;
-    background: #1D1F20;
-    position: relative;
-    border-radius: var(--borderWidth);
-}
-.gradient-border:after {
-    content: '';
-    position: absolute;
-    top: calc(-1 * var(--borderWidth));
-    left: calc(-1 * var(--borderWidth));
-    height: calc(100% + var(--borderWidth) * 2);
-    width: calc(100% + var(--borderWidth) * 2);
-    background: linear-gradient(60deg, #F79533, #F37055, #EF4E7B, #A166AB, #5073B8, #1098AD, #07B39B, #6FBA82
-    );
-    border-radius: calc(2 * var(--borderWidth));
-    z-index: -1;
-    animation: animatedgradient 3s ease alternate infinite;
-    background-size: 300% 300%;
-}
-@keyframes animatedgradient {
-    0% {
-        background-position: 0 100%;
-    }
-    50% {
-        background-position: 100% 50%;
-    }
-    100% {
-        background-position: 0 50%;
-    }
-}
-
-a.text-light {
-    padding: 30px;
-}
-
-/*.page-footer {*/
-/*    display: flex;*/
-/*    align-items:center;*/
-/*}*/
-
-
-
-.logo {
-    height: 140px;
-    width: 280px;
-}
-
-/*this also affects the logo */
-img {
-    background-attachment: fixed;
-    width: 100%;
-    height: auto;
-}
-
-.form-control {
-    width: 30%;
-}
-
-.btn-outline-light {
-    position: relative;
-    left:-750px;
-    bottom: 2px;
-}
-
-
-

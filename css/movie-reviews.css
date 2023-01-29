@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+/*added finished poster*/
 
 .loader {
     border: 10px solid black;
@@ -197,6 +198,7 @@ img {
     max-width:100%;
     height: auto;
 }
+
 
 .back {
     background: url('../img/logos1.png') no-repeat center;
